@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "421285485056",
+    "project_id": "deemefit-b9001",
+    "storage_bucket": "deemefit-b9001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421285485056:android:6e4ec450118bf00a48d6e5",
+        "android_client_info": {
+          "package_name": "com.example.deemefit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421285485056-7q71l4t0iquvtslni2cdlhtde9ke2l0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzEm78dlLXBTqLq3cL3oENqVABNWpnvJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421285485056-7q71l4t0iquvtslni2cdlhtde9ke2l0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:background="@color/white"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:id="@+id/tvTituloExpanded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Deemefit"
+                android:textSize="16sp"
+                style="@style/TextAppearance.Compat.Notification.Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MensajeNotificacion"
+                style="@style/TextAppearance.Compat.Notification" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivLogoDeemefit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/deemefitsombra"
+            android:layout_weight="2"
+            android:contentDescription="@string/DescripcionImagenLogo" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:progress="50"/>
+
+</LinearLayout>

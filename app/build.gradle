@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.deemefit"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation "com.xwray:groupie:2.1.0"
+
+    // Libreria para la imagen de perfil circular
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Importamos el BoM de la plataforma Firebase
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+
+    // Declaramos la dependencia para la librearia de autentificación de Firebase
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-auth:21.0.2'
+
+    // Declaramos las librearias necesarias para almacenar datos en Firebase
+    implementation 'com.google.firebase:firebase-firestore:24.0.2'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+    // Declaramos la libreria para implementar la barra de progreso
+    implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+
+    //Declaramos la libreria que nos permite actualizar al deslizar hacia abajo
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+}

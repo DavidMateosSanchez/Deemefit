@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Deemefit</string>
+    <string name="Regístrate"><u>Regístrate</u></string>
+    <string name="OlvidoContraseña"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="CambiarContra"><u>Cambiar contraseña</u></string>
+    <string name="EliminarCuenta"><u>Eliminar cuenta</u></string>
+    <string name="PesoGuardado"><u>PESO GUARDADO</u></string>
+    <string name="CalcularTMB">Calcular TMB</string>
+    <string name="Sexo">Sexo</string>
+    <string name="Peso">Peso (en kg)</string>
+    <string name="Altura">Altura (en cm)</string>
+    <string name="Edad">Edad</string>
+    <string name="NivelActividad">Nivel de actividad</string>
+    <string name="Calcular">CALCULAR</string>
+    <string name="CambiarContrasenia">Cambiar contraseña</string>
+    <string name="TextoSeguridad">Por motivos de seguridad para cambiar tu contraseña, primero debes ingresar tu contraseña actual</string>
+    <string name="ContraseniaActual">Contraseña actual</string>
+    <string name="NuevaContrasenia">Nueva contraseña</string>
+    <string name="RepiteContrasenia">Repite la contraseña</string>
+    <string name="Guardar">GUARDAR</string>
+    <string name="TiempoDescanso">Tiempo de descanso (en segundos):</string>
+
+
+    <string-array name="sexos">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="actividad">
+        <item>Nada de ejercicio y trabajar sentado</item>
+        <item>Ejercicio ligero (+/-2 días semanales)</item>
+        <item>Ejercicio moderado (+/- 4 días semanales)</item>
+        <item>Ejercicio intenso (+/- 6 días semanales)</item>
+        <item>Entrenamiento intenso diario</item>
+    </string-array>
+
+    <string name="informacionKcal">La tasa metabólica basa (TMB), son las calorías que un ser vivo consume haciendo tareas como respirar, movernos, hacer la digestión o bombear la sangre, ya que para dichas tareas necesitamos energia, energia que obtenemos de la alimentación.</string>
+    <string name="informacionKcal2">Una de las fórmulas más utilizadas para el cálculo de la TMB es la de Harris-Benedict (la utilizada en esta aplicación), que utiliza variables como lo pueden ser la edad, el peso o la altura.</string>
+    <string name="informacionKcal3">La fórmula es la siguiente:</string>
+    <string name="informacionKcal4">TMB Mujer: (10x peso) + (6,25 x altura) – (5 x edad) – 161</string>
+    <string name="informacionKcal5">TMB Hombre: (10 x peso) + (6,25 x altura) – (5 x edad) + 5</string>
+    <string name="informacionKcal6">Al resultado de esta fórmula se le aplica un multiplicador según el nivel de actividad de cada persona, para así lograr un número más aproximado.</string>
+    <string name="informacionKcal7">*Hay que tener en cuenta que el número obtenido siempre será una aproximación, nunca una cantidad exacta.*</string>
+    <string name="TiempoCrono">00</string>
+    <string name="Ejercicio">EJERCICIO</string>
+    <string name="IntroduceSeries">Introduce el número de series</string>
+    <string name="IntroduceRepeticiones">Introduce el número de repeticiones</string>
+    <string name="NuevaReceta">NUEVA RECETA</string>
+    <string name="IntroduceNombreReceta">Introduce el nombre de la receta</string>
+    <string name="IntroduceIngredientes">Introduce los ingredientes</string>
+    <string name="IntroducePreparacion">Introduce la preparación</string>
+    <string name="NuevaRutina">NUEVA RUTINA</string>
+    <string name="IntroduceRutina">Introduce el nombre de la rutina</string>
+    <string name="NuevoEjercicio">NUEVO EJERCICIO</string>
+    <string name="IntroduceEjercicio">Introduce el nombre del ejercicio</string>
+    <string name="Rutina">Rutina</string>
+    <string name="DescripcionImagenNuevoEjercicio">ImagenNuevoEjercicio</string>
+    <string name="EliminarCuentaNoClic">Eliminar cuenta</string>
+    <string name="TextoSeguridadEliminar">Por motivos de seguridad para eliminar tu cuenta por completo, debes de ingresar tu contraseña</string>
+    <string name="IntroduceContrasenia">Introduce tu contraseña</string>
+    <string name="Eliminar">ELIMINAR</string>
+    <string name="HabitosDiarios">Habitos diarios</string>
+    <string name="DescripcionImagenNuevoHabito">ImagenNuevoHabito</string>
+    <string name="Rutinas">Rutinas</string>
+    <string name="Recetas">Recetas</string>
+    <string name="Habitos">Habitos</string>
+    <string name="Cronometro">Cronometro</string>
+    <string name="DescripcionImagenMas">ImagenMas</string>
+    <string name="DescripcionImagenCerrarSesion">ImagenCerrarSesion</string>
+    <string name="DescripcionImagenPerfilUsuario">ImagenPerilUsuario</string>
+    <string name="TextoPresentacion">Hora de ponerse en forma</string>
+    <string name="Email">Email</string>
+    <string name="Contrasenia">Contraseña</string>
+    <string name="IniciarSesion">INICIAR SESIÓN</string>
+    <string name="NoCuenta">¿No tienes cuenta?</string>
+    <string name="Receta">Receta</string>
+    <string name="Ingredientes">Ingredientes</string>
+    <string name="IngredientesGuardados">IngredientesGuardados</string>
+    <string name="Preparacion">Preparación</string>
+    <string name="PreparacionGuardada">PreparaciónGuardada</string>
+    <string name="NombreUsuario">Nombre usuario</string>
+    <string name="EjemploCorreoUsuario">correousuario@gmail.com</string>
+    <string name="Nombre">Nombre</string>
+    <string name="RegistroPeso">REGISTRO\nPESO</string>
+    <string name="CalcularKcal">CALCULA KCAL\nDIARIAS</string>
+    <string name="ActualizarDatos">ACTUALIZAR DATOS</string>
+    <string name="DescripcionImagenNuevaReceta">ImagenNuevaReceta</string>
+    <string name="RecuperarCuenta">Recuperar cuenta</string>
+    <string name="SolicitudCorreo">Por favor, ingresa tu correo electrónico y se te enviará un email con los pasos necesarios para cambiar tu contraseña</string>
+    <string name="Enviar">ENVIAR</string>
+    <string name="DescripcionImagenLogo">ImagenLogo</string>
+    <string name="EmpiezaHoy">Empieza hoy</string>
+    <string name="Registrarme">REGISTRARME</string>
+    <string name="DescripcionImagenNuevaRutina">ImagenNuevaRutina</string>
+    <string name="SeguimientoPeso">Seguimiento peso</string>
+    <string name="IntroducePeso">Introduce tu peso</string>
+    <string name="IntroduceFecha">Introduce la fecha</string>
+    <string name="Aniadir">AÑADIR</string>
+    <string name="DescripcionImagenVolver">ImagenVolver</string>
+    <string name="VerificaEmail">Verifica tu email</string>
+    <string name="TextoCompletaRegistro">Para completar el registro, por favor verifica tu correo electrónico y después haz clic en continuar</string>
+    <string name="EnviarEmail">Enviar email</string>
+    <string name="Continuar">Continuar</string>
+    <string name="DescripcionImagenEliminar">ImagenEliminar</string>
+    <string name="Informacion">INFORMACIÓN</string>
+    <string name="Volver">VOLVER ATRÁS</string>
+    <string name="EjercicioTitulo">EJERCICIO:</string>
+    <string name="SeriesTitulo">SERIES:</string>
+    <string name="RepeticionesTitulo">REPETICIONES:</string>
+    <string name="FechaTitulo">Fecha:</string>
+    <string name="PesoTitulo">Peso:</string>
+    <string name="Deemefit">DEEMEFIT</string>
+    <string name="MensajeNotificacion">Tiempo de descanso agotado ¡A entrenar!\nHaz clic aquí para volver al cronómetro</string>
+    <string name="MensajeNotificacionCorto">Tiempo de descanso agotado ¡A entrenar!</string>
+    <string name="NuevoHabito">NUEVO HÁBITO</string>
+    <string name="AniadeHabito">Añade un nuevo hábito</string>
+
+</resources>

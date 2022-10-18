@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.deemefit">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Deemefit">
+        <activity
+            android:name=".view.EliminarCuentaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.CambiarContraseniaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.PerfilUsuarioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.RecuperarCuentaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.VerificarEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.RegistroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.IniciarSesionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.CalcularKcalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.SeguimientoPesoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.RutinasActivity"
+            android:exported="true"/>
+        <activity android:name=".view.EjerciciosActivity"
+            android:exported="true"/>
+        <activity android:name=".view.RecetasActivity"
+            android:exported="true"/>
+        <activity android:name=".view.MostrarRecetaActivity"
+            android:exported="true"/>
+        <activity android:name=".view.HabitosActivity"
+            android:exported="true"/>
+        <activity android:name=".view.CronometroActivity"
+            android:exported="true"
+            android:parentActivityName=".view.HomeActivity"/>
+        <service android:name=".viewmodel.TimerService"/>
+    </application>
+
+</manifest>

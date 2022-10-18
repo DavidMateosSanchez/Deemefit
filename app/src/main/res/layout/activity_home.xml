@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeActivity"
+    android:background="@drawable/fondodeemefit2">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutPadre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvRutinas"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#797D7F"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@id/cvRecetas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRutinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="70dp"
+                    android:fontFamily="@font/aesthetic"
+                    android:text="@string/Rutinas"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    app:drawableRightCompat="@drawable/ic_list" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvRecetas"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#797D7F"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@id/cvHabitos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvRutinas">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRecetas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="70dp"
+                    android:fontFamily="@font/aesthetic"
+                    android:text="@string/Recetas"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    app:drawableRightCompat="@drawable/ic_food" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHabitos"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#797D7F"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@id/cvCronometro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvRecetas">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHabitos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="70dp"
+                    android:fontFamily="@font/aesthetic"
+                    android:text="@string/Habitos"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    app:drawableRightCompat="@drawable/ic_checks" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCronometro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#797D7F"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvHabitos">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCronometro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/aesthetic"
+                    android:text="@string/Cronometro"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    app:drawableEndCompat="@drawable/ic_timer2" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#797D7F"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:srcCompat="@drawable/ic_add"
+        android:contentDescription="@string/DescripcionImagenMas" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D7DBDD"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        android:visibility="invisible"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnMas"
+        app:layout_constraintEnd_toEndOf="@+id/btnMas"
+        app:srcCompat="@drawable/ic_exit"
+        android:contentDescription="@string/DescripcionImagenCerrarSesion" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnPerfilUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D7DBDD"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        android:visibility="invisible"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
+        app:layout_constraintEnd_toEndOf="@+id/btnCerrarSesion"
+        app:srcCompat="@drawable/ic_user"
+        android:contentDescription="@string/DescripcionImagenPerfilUsuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

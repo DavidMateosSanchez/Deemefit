@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:opacity="opaque"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Configuramos el fondo para que aparezca de color blanco con una imagen de nuestro logo al centro-->
+
+    <item android:drawable="@color/white"/>
+    <item
+        android:width="300dp"
+        android:height="300dp"
+        android:gravity="center">
+        <bitmap android:src="@drawable/deemefitsombra"/>
+    </item>
+
+</layer-list>

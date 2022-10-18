@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/botones_fondo.xml" value="0.1" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/dialogs_redondeados.xml" value="0.2916666666666667" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_add.xml" value="0.1685185185185185" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_add_element.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_add_photo.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_checks.xml" value="0.36203703703703705" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_delete.xml" value="0.29583333333333334" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_edit.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_email.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_exit.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_info.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_list.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_password.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_pause.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_play.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/ic_stop.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/drawable/splash_background.xml" value="0.3828125" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_calcular_kcal.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_cambiar_contrasenia.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_cronometro.xml" value="0.3446557971014493" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_dialog_editarejercicio.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_dialog_nuevareceta.xml" value="0.30808080808080807" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_dialog_nuevarutina.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_dialog_nuevoejercicio.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_ejercicios.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_eliminar_cuenta.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_habitos.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.27927927927927926" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_mostrarreceta.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.3037249283667622" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_recetas.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_recuperar_cuenta.xml" value="0.351010101010101" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_registro.xml" value="0.25" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_rutinas.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_seguimiento_peso.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/activity_verificar_email.xml" value="0.25" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/dialogs_redondeados.xml" value="0.2755208333333333" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/espera_dialog.xml" value="0.5" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/habito_item.xml" value="0.32054794520547947" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/informacion_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/items_ejercicios.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/items_peso.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/items_recetas.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/items_rutinas.xml" value="0.36666666666666664" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/lista_items.xml" value="0.1" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/notification_expanded.xml" value="0.31927083333333334" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/notification_small.xml" value="0.33" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/nuevohabito_layout.xml" value="0.25" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/layout/tiempo_layout.xml" value="0.259963768115942" />
+        <entry key="..\:/DAVID/Deemefit/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28229166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
