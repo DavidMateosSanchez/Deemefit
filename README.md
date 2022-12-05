@@ -2,6 +2,10 @@
 
 Aplicación versátil, en la que el usuario pueda llevar un seguimiento y gestión tanto de sus entrenamientos, como de su estilo de vida diario, para que así pueda tener un mayor control de todo lo que envuelve a un estilo de vida fitness y que sea más sencillo mantenerlo a lo largo del tiempo.
 
+## Imágenes de demostración
+
+![Alt text](https://github.com/DavidMateosSanchez/Deemefit-AplicacionParaDeportistas/blob/ea7e22d5afb1fa4c11ee29611781d616cc82a433/fotosDeemefit.png)
+
 ## Video de demostración
 
 [![Alt text](https://img.youtube.com/vi/KdcURNLCXbM/0.jpg)](https://www.youtube.com/watch?v=KdcURNLCXbM)
