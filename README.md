@@ -1,3 +1,5 @@
+*Actualmente me encuentro trabajando en el desarrollo de una versión 2.0 de esta aplicación, desarrollada con JetpackCompose, Clean Architecture y una mejor aplicación del patrón de diseño MVVM*
+
 # Deemefit - Aplicación para deportistas 💪
 
 Aplicación versátil, en la que el usuario pueda llevar un seguimiento y gestión tanto de sus entrenamientos, como de su estilo de vida diario, para que así pueda tener un mayor control de todo lo que envuelve a un estilo de vida fitness y que sea más sencillo mantenerlo a lo largo del tiempo.
