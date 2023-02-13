@@ -1,4 +1,4 @@
-*Actualmente me encuentro trabajando en el desarrollo de una versión 2.0 de esta aplicación, desarrollada con JetpackCompose, Clean Architecture y una mejor aplicación del patrón de diseño MVVM*
+*Actualmente me encuentro trabajando en la mejora de esta aplicación, aplicando Clean Architecture, una mejor aplicación del patrón de diseño MVVM y mejoras generales en el código, haciendo del mismo un código más limpio y legible*
 
 # Deemefit - Aplicación para deportistas 💪
 
