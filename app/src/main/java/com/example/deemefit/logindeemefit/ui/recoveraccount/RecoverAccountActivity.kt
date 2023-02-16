@@ -1,14 +1,15 @@
-package com.example.deemefit.view
+package com.example.deemefit.logindeemefit.ui.recoveraccount
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.deemefit.databinding.ActivityRecuperarCuentaBinding
+import com.example.deemefit.logindeemefit.ui.login.LoginActivity
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class RecuperarCuentaActivity : AppCompatActivity() {
+class RecoverAccountActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRecuperarCuentaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class RecuperarCuentaActivity : AppCompatActivity() {
             if (emailUsuario.isNotEmpty()){
                 Firebase.auth.sendPasswordResetEmail(emailUsuario).addOnCompleteListener {task ->
                     if (task.isSuccessful){
-                        val intent = Intent(this, IniciarSesionActivity::class.java)
+                        val intent = Intent(this, LoginActivity::class.java)
                         this.startActivity(intent)
                         Toast.makeText(this,"Se ha enviado un correo de recuperación",
                             Toast.LENGTH_SHORT).show()

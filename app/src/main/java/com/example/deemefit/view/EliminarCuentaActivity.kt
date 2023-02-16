@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.deemefit.databinding.ActivityEliminarCuentaBinding
+import com.example.deemefit.logindeemefit.ui.login.LoginActivity
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -58,7 +59,7 @@ class EliminarCuentaActivity : AppCompatActivity() {
     //Utilizaremos esta función para volver a la pantalla de iniciar sesión en el caso de que se haya eliminado correctamente el usuario
     private fun cerrarSesion() {
         auth.signOut()
-        val intent = Intent(this, IniciarSesionActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         this.startActivity(intent)
     }
 }

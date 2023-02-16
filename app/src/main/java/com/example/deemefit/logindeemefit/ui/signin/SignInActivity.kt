@@ -1,4 +1,4 @@
-package com.example.deemefit.view
+package com.example.deemefit.logindeemefit.ui.signin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,12 +7,14 @@ import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
 import com.example.deemefit.databinding.ActivityRegistroBinding
+import com.example.deemefit.view.HomeActivity
+import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
-class RegistroActivity : AppCompatActivity() {
+class SignInActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityRegistroBinding
@@ -75,7 +77,7 @@ class RegistroActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Toast.makeText(this, "¡Usuario creado correctamente!",
                         Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this,VerificarEmailActivity::class.java)
+                    val intent = Intent(this, VerificarEmailActivity::class.java)
                     startActivity(intent)
                 } else {
                     Log.w("TAG", "createUserWithEmail:failure", task.exception)

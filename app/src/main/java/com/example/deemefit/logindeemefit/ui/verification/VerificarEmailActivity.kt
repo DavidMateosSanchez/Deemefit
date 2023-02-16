@@ -1,4 +1,4 @@
-package com.example.deemefit.view
+package com.example.deemefit.logindeemefit.ui.verification
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Toast
 import com.example.deemefit.databinding.ActivityVerificarEmailBinding
+import com.example.deemefit.logindeemefit.ui.login.LoginActivity
+import com.example.deemefit.view.HomeActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
@@ -83,7 +85,7 @@ class VerificarEmailActivity : AppCompatActivity() {
 
     private fun cerrarSesion(){
         Firebase.auth.signOut()
-        val intent = Intent(this, IniciarSesionActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 

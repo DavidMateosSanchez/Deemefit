@@ -1,4 +1,4 @@
-package com.example.deemefit.view
+package com.example.deemefit.logindeemefit.ui.login
 
 import android.content.Context
 import android.content.Intent
@@ -11,12 +11,14 @@ import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import com.example.deemefit.databinding.ActivityIniciarSesionBinding
-import com.example.deemefit.view.RegistroActivity
+import com.example.deemefit.view.HomeActivity
+import com.example.deemefit.logindeemefit.ui.recoveraccount.RecoverAccountActivity
+import com.example.deemefit.logindeemefit.ui.signin.SignInActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class IniciarSesionActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityIniciarSesionBinding
     private var exit = false
@@ -51,12 +53,12 @@ class IniciarSesionActivity : AppCompatActivity() {
         }
 
         binding.tvRegistrate.setOnClickListener {
-            val intent = Intent(this, RegistroActivity::class.java)
+            val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
 
         binding.tvOlvidasteContrasenia.setOnClickListener {
-            val intent = Intent(this, RecuperarCuentaActivity::class.java)
+            val intent = Intent(this, RecoverAccountActivity::class.java)
             startActivity(intent)
         }
 

@@ -7,7 +7,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Deemefit">
+        android:theme="@style/Theme.Deemefit"
+        android:name=".DeemefitApp">
         <activity
             android:name=".view.EliminarCuentaActivity"
             android:exported="true" />
@@ -18,16 +19,16 @@
             android:name=".view.PerfilUsuarioActivity"
             android:exported="true" />
         <activity
-            android:name=".view.RecuperarCuentaActivity"
+            android:name=".logindeemefit.ui.recoveraccount.RecoverAccountActivity"
             android:exported="true" />
         <activity
-            android:name=".view.VerificarEmailActivity"
+            android:name=".logindeemefit.ui.verification.VerificarEmailActivity"
             android:exported="true" />
         <activity
-            android:name=".view.RegistroActivity"
+            android:name=".logindeemefit.ui.signin.SignInActivity"
             android:exported="true" />
         <activity
-            android:name=".view.IniciarSesionActivity"
+            android:name=".logindeemefit.ui.login.LoginActivity"
             android:exported="true" />
         <activity
             android:name=".view.CalcularKcalActivity"

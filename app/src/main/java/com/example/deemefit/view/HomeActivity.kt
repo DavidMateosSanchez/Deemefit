@@ -12,6 +12,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.deemefit.R
 import com.example.deemefit.databinding.ActivityHomeBinding
+import com.example.deemefit.logindeemefit.ui.login.LoginActivity
+import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -109,7 +111,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun cerrarSesion(){
         Firebase.auth.signOut()
-        val intent = Intent(this, IniciarSesionActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 
