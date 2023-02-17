@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.deemefit.logindeemefit.ui.login.LoginActivity
+import com.example.deemefit.logindeemefit.ui.signin.SignInActivity
 import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -37,7 +38,7 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }else{
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(LoginActivity.create(this))
         }
         finish()
     }

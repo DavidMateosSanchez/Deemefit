@@ -1,5 +1,6 @@
 package com.example.deemefit.logindeemefit.ui.verification
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +15,12 @@ import com.google.firebase.auth.ktx.userProfileChangeRequest
 import com.google.firebase.ktx.Firebase
 
 class VerificarEmailActivity : AppCompatActivity() {
+
+    companion object {
+        fun create(context: Context): Intent =
+            Intent(context, VerificarEmailActivity::class.java)
+    }
+
 
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityVerificarEmailBinding

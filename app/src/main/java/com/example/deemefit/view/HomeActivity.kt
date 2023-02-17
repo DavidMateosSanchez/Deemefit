@@ -1,5 +1,6 @@
 package com.example.deemefit.view
 
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
@@ -19,6 +20,11 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class HomeActivity : AppCompatActivity() {
+
+    companion object {
+        fun create(context: Context): Intent =
+            Intent(context, HomeActivity::class.java)
+    }
 
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityHomeBinding

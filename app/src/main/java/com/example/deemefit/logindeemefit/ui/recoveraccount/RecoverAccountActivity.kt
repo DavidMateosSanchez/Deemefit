@@ -1,5 +1,6 @@
 package com.example.deemefit.logindeemefit.ui.recoveraccount
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,12 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class RecoverAccountActivity : AppCompatActivity() {
+
+    companion object {
+        fun create(context: Context): Intent =
+            Intent(context, RecoverAccountActivity::class.java)
+    }
+
     private lateinit var binding: ActivityRecuperarCuentaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

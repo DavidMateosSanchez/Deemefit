@@ -115,4 +115,15 @@
     <string name="NuevoHabito">NUEVO HÁBITO</string>
     <string name="AniadeHabito">Añade un nuevo hábito</string>
 
+
+    <!--NUEVAS AÑADIDAS-->
+
+    <string name="login_error_dialog_title">No hemos encontrado el usuario</string>
+    <string name="login_error_dialog_body">Verifique los datos o vuelva a intentarlo</string>
+    <string name="login_error_dialog_negative_action">Cancelar</string>
+    <string name="login_error_dialog_positive_action">Reintentar</string>
+
+    <string name="login_error_mail">El email no es válido</string>
+    <string name="login_error_password">Debe contener al menos 6 caracteres</string>
+
 </resources>
