@@ -45,8 +45,6 @@ class LoginActivity : AppCompatActivity() {
     @Inject
     lateinit var dialogLauncher: DialogFragmentLauncher
 
-    // Quitar estas dos variables, ya no las necesitamos
-//    private lateinit var auth: FirebaseAuth
     private var exit = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,8 +53,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         initUI()
 
-        // Inicializamos la autenticación de Firebase
-//        auth = Firebase.auth
 
         if (!checkForInternet(this)) {
             Toast.makeText(
@@ -69,31 +65,6 @@ class LoginActivity : AppCompatActivity() {
         if (exit) {
             onBackPressed()
         }
-
-//        binding.btnIniciarSesion.setOnClickListener {
-//            val emailUsuario = binding.etEmail.text.toString()
-//            val passwordUsuario = binding.etContrasenia.text.toString()
-//
-//            if (emailUsuario.isNotEmpty() && passwordUsuario.isNotEmpty()) {
-//                iniciarSesion(emailUsuario, passwordUsuario)
-//            } else {
-//                Toast.makeText(
-//                    this, "Debes introducir un correo y contraseña válidos",
-//                    Toast.LENGTH_SHORT
-//                ).show()
-//            }
-//        }
-//
-//        binding.tvRegistrate.setOnClickListener {
-//            val intent = Intent(this, SignInActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//        binding.tvOlvidasteContrasenia.setOnClickListener {
-//            val intent = Intent(this, RecoverAccountActivity::class.java)
-//            startActivity(intent)
-//        }
-
     }
 
     private fun initUI() {
@@ -209,32 +180,6 @@ class LoginActivity : AppCompatActivity() {
     private fun goToVerifyAccount() {
         startActivity(VerificarEmailActivity.create(this))
     }
-
-
-//    //A esta función le pasamos el email y contraseña que el usuario ha introducido para comprobar que exista dicho usuario en Firebase e iniciar sesión pasando a la actividado
-//    //Home. En caso de que no exista el usuario, se mostrará un Toast indicándolo
-//    private fun iniciarSesion (email: String, password: String){
-//
-//        auth.signInWithEmailAndPassword(email, password)
-//            .addOnCompleteListener(this) { task ->
-//                if (task.isSuccessful) {
-//                    Log.d("TAG", "signInWithEmail:success")
-//                    reload()
-//                    } else {
-//                        // Si el inicio de sesión ha fallado, muestra el siguiente mensaje al usuario
-//                        Log.w("TAG", "signInWithEmail:failure", task.exception)
-//                        Toast.makeText(
-//                            this, "Correo o contraseña incorrectos",
-//                            Toast.LENGTH_SHORT
-//                        ).show()
-//                    }
-//                }
-//    }
-//
-//    private fun reload(){
-//        val intent = Intent(this, HomeActivity::class.java)
-//        this.startActivity(intent)
-//    }
 
     private fun checkForInternet(context: Context): Boolean {
 

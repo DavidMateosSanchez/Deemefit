@@ -124,6 +124,6 @@
     <string name="login_error_dialog_positive_action">Reintentar</string>
 
     <string name="login_error_mail">El email no es válido</string>
-    <string name="login_error_password">Debe contener al menos 6 caracteres</string>
+    <string name="login_error_password">Debe contener mínimo 4 caracteres, entre ellos: 1 número, 1 mayúscula y 1 mínuscula</string>
 
 </resources>
