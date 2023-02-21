@@ -1,4 +1,4 @@
-*Actualmente me encuentro trabajando en la mejora de esta aplicación, aplicando Clean Architecture, una mejor aplicación del patrón de diseño MVVM y mejoras generales en el código, haciendo del mismo un código más limpio y legible*
+*Actualmente me encuentro trabajando en la mejora de esta aplicación, aplicando Clean Architecture, una mejor aplicación del patrón de diseño MVVM, inyección de dependencias mediante Dagger Hilt y mejoras generales en el código, haciendo del mismo un código más limpio y legible, todo ello aplicando Git Flow para gestionar dichas actualizaciones y mejoras*
 
 # Deemefit - Aplicación para deportistas 💪
 
