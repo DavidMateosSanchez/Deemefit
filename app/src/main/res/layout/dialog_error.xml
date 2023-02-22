@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         style="@style/TitleText"
         android:layout_marginTop="16dp"
-        android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Título" />
 
@@ -32,23 +31,25 @@
         android:id="@+id/btnPositive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TertiaryButton"
+        style="@style/DialogButton"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         tools:text=":Reintentar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:layout_constraintStart_toEndOf="@id/btnNegative"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnNegative"
         android:layout_width="wrap_content"
-        style="@style/TertiaryButton"
+        style="@style/DialogButton"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         tools:text=":Cancelar"
         app:layout_constraintEnd_toStartOf="@+id/btnPositive"
-        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,14 +2,9 @@ package com.example.deemefit.logindeemefit.ui.login
 
 import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.inputmethod.EditorInfo
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
@@ -45,26 +40,11 @@ class LoginActivity : AppCompatActivity() {
     @Inject
     lateinit var dialogLauncher: DialogFragmentLauncher
 
-    private var exit = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initUI()
-
-
-        if (!checkForInternet(this)) {
-            Toast.makeText(
-                this,
-                "Por favor, utiliza una conexión de red para poder acceder a la aplicación correctamente.",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-
-        if (exit) {
-            onBackPressed()
-        }
     }
 
     private fun initUI() {
@@ -181,37 +161,45 @@ class LoginActivity : AppCompatActivity() {
         startActivity(VerificarEmailActivity.create(this))
     }
 
-    private fun checkForInternet(context: Context): Boolean {
+//    private fun checkForInternet(context: Context): Boolean {
+//
+//        val connectivityManager =
+//            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            val network = connectivityManager.activeNetwork ?: return false
+//
+//            val activeNetwork = connectivityManager.getNetworkCapabilities(network) ?: return false
+//
+//            return when {
+//                activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
+//
+//                activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
+//
+//                else -> false
+//            }
+//        } else {
+//            @Suppress("DEPRECATION") val networkInfo =
+//                connectivityManager.activeNetworkInfo ?: return false
+//            @Suppress("DEPRECATION")
+//            return networkInfo.isConnected
+//        }
+//    }
 
-        val connectivityManager =
-            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            val network = connectivityManager.activeNetwork ?: return false
-
-            val activeNetwork = connectivityManager.getNetworkCapabilities(network) ?: return false
-
-            return when {
-                activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
-
-                activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
-
-                else -> false
+    private fun showOnBackDialog() {
+        ErrorDialog.create(
+            title = "SALIR",
+            description = "¿Quieres salir de la aplicación?",
+            negativeAction = ErrorDialog.Action("NO") {
+                it.dismiss()
+            },
+            positiveAction = ErrorDialog.Action("SI, SALIR") {
+                finishAffinity()
+                it.dismiss()
             }
-        } else {
-            @Suppress("DEPRECATION") val networkInfo =
-                connectivityManager.activeNetworkInfo ?: return false
-            @Suppress("DEPRECATION")
-            return networkInfo.isConnected
-        }
+        ).show(dialogLauncher, this)
     }
 
     override fun onBackPressed() {
-        if (exit) {
-            finishAffinity()
-        } else {
-            Toast.makeText(this, "Pulsa atrás de nuevo para salir", Toast.LENGTH_SHORT).show()
-            exit = true
-            Handler().postDelayed({ exit = false }, 3 * 1000)
-        }
+        showOnBackDialog()
     }
 }

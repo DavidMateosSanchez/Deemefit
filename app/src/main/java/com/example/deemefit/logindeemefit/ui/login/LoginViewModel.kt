@@ -1,6 +1,7 @@
 package com.example.deemefit.logindeemefit.ui.login
 
 import android.util.Patterns
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -56,6 +57,10 @@ class LoginViewModel @Inject constructor(val loginUseCase: LoginUseCase) : ViewM
     private var _showErrorDialog = MutableLiveData(UserLogin())
     val showErrorDialog: LiveData<UserLogin>
         get() = _showErrorDialog
+
+    private val _exitApp = MutableLiveData<Event<Boolean>>()
+    val exitApp: LiveData<Event<Boolean>>
+        get() = _exitApp
 
     fun onLoginSelected(email: String, password: String) {
         if (isValidEmail(email) && isValidPassword(password)) {
