@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.deemefit.logindeemefit.ui.login.LoginActivity
-import com.example.deemefit.logindeemefit.ui.signin.SignInActivity
-import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
+import com.example.deemefit.logindeemefit.ui.verification.VerificationActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -34,7 +33,7 @@ class SplashActivity : AppCompatActivity() {
                 ).show()
                 reload()
             }else{
-                val intent = Intent(this, VerificarEmailActivity::class.java)
+                val intent = Intent(this, VerificationActivity::class.java)
                 startActivity(intent)
             }
         }else{

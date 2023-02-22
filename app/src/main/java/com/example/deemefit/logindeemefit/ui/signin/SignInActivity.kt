@@ -17,7 +17,7 @@ import com.example.deemefit.logindeemefit.core.ex.loseFocusAfterAction
 import com.example.deemefit.logindeemefit.core.ex.onTextChanged
 import com.example.deemefit.logindeemefit.core.ex.show
 import com.example.deemefit.logindeemefit.ui.signin.model.UserSignIn
-import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
+import com.example.deemefit.logindeemefit.ui.verification.VerificationActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -170,7 +170,7 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun goToVerifyEmail() {
-        startActivity(VerificarEmailActivity.create(this))
+        startActivity(VerificationActivity.create(this))
     }
 
 //    /*Cuando el usuario quiera registrarse deberemos revisar si el usuario está verificado correctamente, esto lo haremos al iniciar la actividad

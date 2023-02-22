@@ -22,7 +22,7 @@
             android:name=".logindeemefit.ui.recoveraccount.RecoverAccountActivity"
             android:exported="true" />
         <activity
-            android:name=".logindeemefit.ui.verification.VerificarEmailActivity"
+            android:name=".logindeemefit.ui.verification.VerificationActivity"
             android:exported="true" />
         <activity
             android:name=".logindeemefit.ui.signin.SignInActivity"

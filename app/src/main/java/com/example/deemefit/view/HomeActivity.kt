@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.deemefit.R
 import com.example.deemefit.databinding.ActivityHomeBinding
 import com.example.deemefit.logindeemefit.ui.login.LoginActivity
-import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
+import com.example.deemefit.logindeemefit.ui.verification.VerificationActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -128,7 +128,7 @@ class HomeActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if (currentUser != null){
             if (!currentUser.isEmailVerified) {
-                val intent = Intent(this, VerificarEmailActivity::class.java)
+                val intent = Intent(this, VerificationActivity::class.java)
                 this.startActivity(intent)
             }
         }

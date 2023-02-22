@@ -20,7 +20,7 @@ import com.example.deemefit.logindeemefit.ui.login.model.UserLogin
 import com.example.deemefit.view.HomeActivity
 import com.example.deemefit.logindeemefit.ui.recoveraccount.RecoverAccountActivity
 import com.example.deemefit.logindeemefit.ui.signin.SignInActivity
-import com.example.deemefit.logindeemefit.ui.verification.VerificarEmailActivity
+import com.example.deemefit.logindeemefit.ui.verification.VerificationActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -158,7 +158,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goToVerifyAccount() {
-        startActivity(VerificarEmailActivity.create(this))
+        startActivity(VerificationActivity.create(this))
     }
 
 //    private fun checkForInternet(context: Context): Boolean {
